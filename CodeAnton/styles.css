@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300&display=swap');
+
+* {
+    color: #707070;
+}
+
+.main-header{
+    background-image: url(elements/header-01.png);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    background-color: #E4DBD2;
+}
+
+.page-title1 {
+    margin-top: 0px;
+    /* need to figure out how to centre*/
+    padding-top: 50px;
+    margin-left: 250px;
+    margin-bottom: 0px;
+    
+    font-family: 'Great Vibes', cursive;
+    font-size: 96px;
+    font-weight: normal;
+    
+    /*background-color: blue;*/
+   }
+
+.page-title2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 64px;
+    font-weight: normal;
+    /* need to figure out how to centre*/
+    margin-top: 0px;
+    margin-left: 320px;
+    /*background-color: blue;*/
+}
+   
