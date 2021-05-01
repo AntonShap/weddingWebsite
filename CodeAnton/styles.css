@@ -25,7 +25,7 @@
     
     font-family: 'Great Vibes', cursive;
     font-size: 96px;
-    font-weight: normal;
+    font-weight: lighter;
     
     /*background-color: blue;*/
    }
@@ -33,10 +33,29 @@
 .page-title2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 64px;
-    font-weight: normal;
+    font-weight: lighter;
     /* need to figure out how to centre*/
     margin-top: 0px;
     margin-left: 320px;
     /*background-color: blue;*/
 }
-   
+
+/*this is the entire main navigation bar*/
+.mainmenu li {
+    display: inline;
+}
+
+/*these are the elements in the main navigation bar*/
+.mainmenu a {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding: .5em;
+    font-size: 32px;
+    
+}
+
+.mainmenu a:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
