@@ -14,15 +14,18 @@
     margin-left: -20px;
     margin-right: -20px;
     background-color: #E4DBD2;
+    text-align: center;
 }
 
 .page-title1 {
     margin-top: 0px;
-    /* need to figure out how to centre*/
-    padding-top: 50px;
-    margin-left: 250px;
-    margin-bottom: 0px;
+    /* need to figure out how to centre
     
+    margin-left: 250px;
+    
+    */
+    margin-bottom: 0px;
+    padding-top: 50px;
     font-family: 'Great Vibes', cursive;
     font-size: 96px;
     font-weight: lighter;
@@ -36,7 +39,7 @@
     font-weight: lighter;
     /* need to figure out how to centre*/
     margin-top: 0px;
-    margin-left: 320px;
+    
     /*background-color: blue;*/
 }
 
@@ -51,11 +54,72 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     text-decoration: none;
-    padding: .5em;
-    font-size: 32px;
+    padding: 1.2em;
+    font-size: 24px;
     
 }
 
 .mainmenu a:hover {
     background-color: rgba(0, 0, 0, .1);
+}
+
+.main-header h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 32px;
+    text-align: center; 
+}
+
+.section h3{
+    font-family: 'Great Vibes', cursive;
+    font-size: 64px;
+    font-weight: lighter;
+    text-align: center
+}
+
+.section h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    background-color: chartreuse;
+}
+
+.section h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 32px;
+    text-align: center; 
+    background-color: red
+}
+
+.section p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+
+.section-child h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center
+}
+
+.section-child h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 32px;
+    text-align: center
+}
+
+.section-child p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+
+footer{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center
 }
