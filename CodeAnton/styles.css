@@ -49,6 +49,7 @@ body{
 /*this is the entire main navigation bar*/
 .mainmenu li {
     display: inline;
+    
 }
  
 /*these are the elements in the main navigation bar*/
@@ -57,13 +58,17 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     text-decoration: none;
-    padding: 1.2em;
+    padding: 1em;
+    margin: 0.3em;
     font-size: 24px;
     
 }
 
 .mainmenu a:hover {
     background-color: rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    position: relative;
+    bottom: 2px;
 }
 
 button{
@@ -76,11 +81,15 @@ button{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 24px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 button:hover{
     background-color: rgba(0, 0, 0, .1);
     color: white;
+    position: relative;
+    bottom: 2px;
 }
 
 .hero-image{
