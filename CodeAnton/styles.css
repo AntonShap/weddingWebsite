@@ -99,7 +99,7 @@ button:hover{
     background-size: cover;
     position: relative;
 
-    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .main-header h5{
@@ -186,6 +186,8 @@ background-color: #E4DBD2;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .picture-mid-screen-reception{
@@ -204,6 +206,8 @@ background-color: #E4DBD2;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -275,7 +279,9 @@ background-color: #E4DBD2;
     border: 1px solid #707070;
     border-radius: 10px;
     margin-left:20px;
-    margin-bottom:30px
+    margin-bottom:30px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .image-map{
@@ -287,6 +293,8 @@ background-color: #E4DBD2;
     margin-right:20px;
     margin-bottom:30px;
     margin-top:20px; 
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*--------------------------------Website Footer--------------------------------*/
@@ -307,3 +315,4 @@ footer{
     background-color: #E4DBD2;
     margin: 0;
 }
+
