@@ -14,12 +14,18 @@ body {
 
 .OS-light {
     font-family: 'Open Sans', sans-serif;
-    
- }
+}
+
+.GV-regular {
+    font-family: 'Great Vibes', cursive;
+}
+
+.main {
+    text-align: center;
+}
 
 .h1-title {
     text-align: center;
-    font-family: 'Great Vibes', cursive;
     font-size: 96px;
     font-weight: lighter;
     margin: 0;
@@ -59,7 +65,11 @@ body {
     border-radius: 12px;
 }
 
-.container {
+.heroIMG-container {
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    position: relative;
     background-image: url("images/withoutdot.jpg");
     background-position: top;
     width: 1062px;
@@ -73,9 +83,31 @@ body {
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 19%);
 }
 
-.btnRSVP {
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 520px;
+   
+}
+
+.church-container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    vertical-align: middle;
+    position: relative;
+    top: 520px;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.church-container h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.btnRSVP {
+    
     padding: .27em;
     height: 55px;
     width: 164px;
@@ -83,9 +115,8 @@ body {
     font-weight: bold;
     border-radius: 14px;
     border: 1px solid #707070;
-    margin-top: 500px;
+    
     background-color: #E4DBD2;
-    margin-left: 450px;
 }
 
 .btnRSVP:hover {
@@ -94,5 +125,80 @@ body {
     cursor: pointer;
 }
 
+.story-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+}
 
+.story-container h3 {
+    font-size: 64px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
 
+.story-title {
+    text-align: center;
+    width: 550px;
+    border-bottom: 1px solid #707070;
+
+}
+
+.story-container p {
+    width: 1064px;
+    margin-bottom: 0px;
+}
+
+.event-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-Title {
+    font-size: 64px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 64px;
+    border-bottom: 1px solid #707070;
+    width: 550px;
+
+}
+
+.event-Title h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.church-details {
+    font-size: 40px;
+}
+
+.church-details div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.divImgChurch {
+    margin-top: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.church-details h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.event-container h5 {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 40px;
+
+}
