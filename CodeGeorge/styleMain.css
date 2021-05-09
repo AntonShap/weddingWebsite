@@ -20,6 +20,41 @@ body {
     font-family: 'Great Vibes', cursive;
 }
 
+.h3 {
+    padding: 0;
+    margin: 0;
+} 
+
+.h5 {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.p {
+    font-size: 24px;
+    width: 1064px;
+    margin-bottom: 0px
+}
+
+.h3-box {
+    font-size: 64px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 64px;
+    border-bottom: 1px solid #707070;
+    width: 650px
+}
+
+.section-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+}
+
 .main {
     text-align: center;
 }
@@ -90,7 +125,7 @@ body {
    
 }
 
-.church-container {
+.date-heroIMG-container {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -98,11 +133,6 @@ body {
     top: 520px;
     margin-bottom: 20px;
     font-size: 35px;
-}
-
-.church-container h5 {
-    margin: 0;
-    padding: 0;
 }
 
 .btnRSVP {
@@ -122,57 +152,6 @@ body {
     background-color: rgba(0, 0, 0, -1);
     position: relative;
     cursor: pointer;
-}
-
-.story-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: 24px;
-}
-
-.story-container h3 {
-    font-size: 64px;
-    margin-top: 150px;
-    margin-bottom: 10px;
-}
-
-.story-title {
-    text-align: center;
-    width: 650px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #707070;
-
-}
-
-.story-container p {
-    width: 1064px;
-    margin-bottom: 0px;
-}
-
-.event-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: 24px;
-}
-
-.event-Title {
-    font-size: 64px;
-    margin-top: 150px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    font-size: 64px;
-    border-bottom: 1px solid #707070;
-    width: 650px;
-
-}
-
-.event-Title h3 {
-    padding: 0;
-    margin: 0;
 }
 
 .church-details {
@@ -196,13 +175,6 @@ body {
     margin: 0;
 }
 
-.event-container h5 {
-    margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 40px;
-
-}
-
 .curchIMG {
     width: 1062px;
     height: 705px;
@@ -211,56 +183,23 @@ body {
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 19%);
 }
 
-.event-container p {
-    width: 1062px;
-    margin-bottom: 0px;
-}
-
-.Pre-drinks-container {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    font-size: 24px;
-}
-
-.preDrinks-Title {
-    font-size: 64px;
-    margin-top: 150px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    font-size: 64px;
-    border-bottom: 1px solid #707070;
-    width: 650px;
-    margin-top: 150px;
-}
-
-.Pre-drinks-container h3 {
-    margin: 0;
-    padding: 0;
-}
-
-.Pre-drinks-container h5 {
-    margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 40px;
-    font-size: 40px;
-}
-
 .div-img-p-predrinks {
     display: flex;
     flex-direction: row-reverse;
     position: relative;
-    align-items: center;
+    height: 531px;
 }
 
 .Pre-drinks-container img {
     width: 531px;
-    height: 705px;
+    height: 531px;
     border: 2px solid #707070;
     border-radius: 10px;
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 19%)
+}
+
+.lobyIMG-box {
+    align-items: top;
 }
 
 .Pre-drinks-p {
@@ -272,38 +211,7 @@ body {
 
 .Pre-drinks-container p {
     margin-top: 0px;
-}
-
-.reception-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
     font-size: 24px;
-}
-
-.reception-Title {
-    font-size: 64px;
-    margin-top: 150px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    font-size: 64px;
-    border-bottom: 1px solid #707070;
-    width: 650px;
-    margin-top: 150px;
-}
-
-.reception-container h3 {
-    margin: 0px;
-    padding: 0px;
-}
-
-.reception-container h5 {
-    margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 40px;
-    font-size: 40px;
 }
 
 .reception-container img {
@@ -312,43 +220,6 @@ body {
     border: 2px solid #707070;
     border-radius: 10px;
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 19%);
-}
-
-.reception-container p {
-    width: 1062px;
-    margin-bottom: 0px;
-}
-
-.map-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-    font-size: 24px;
-}
-
-.map-Title {
-    font-size: 64px;
-    margin-top: 150px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    font-size: 64px;
-    border-bottom: 1px solid #707070;
-    width: 650px;
-    margin-top: 150px;
-}
-
-.map-container h3 {
-    margin: 0px;
-    padding: 0px;
-}
-
-.map-container h5 {
-    margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 40px;
-    font-size: 40px;
 }
 
 .div-img-p-map {
@@ -374,87 +245,19 @@ body {
 }
 
 .map-container p {
+    font-size: 24px;
     margin-top: 0px;
-}
-
-.accomodation-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-    font-size: 24px;
-}
-
-.accomodation-Title {
-    font-size: 64px;
-    margin-top: 150px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    font-size: 64px;
-    border-bottom: 1px solid #707070;
-    width: 650px;
-    margin-top: 150px;
-}
-
-.accomodation-container h3 {
-    margin: 0px;
-    padding: 0px;
-}
-
-.accomodation-container p {
-    width: 1062px;
-    margin-bottom: 0px;
-}
-
-.presents-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-    font-size: 24px;
-}
-
-.presents-Title {
-    font-size: 64px;
-    margin-top: 150px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    font-size: 64px;
-    border-bottom: 1px solid #707070;
-    width: 650px;
-    margin-top: 150px;
-}
-
-.presents-container h3 {
-    margin: 0px;
-    padding: 0px;
-}
-
-.presents-container p {
-    width: 1062px;
-    margin-bottom: 0px;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-    font-size: 24px;
 }
 
 .footer {
     border-top: 1px solid #707070;
     width: 650px;
     margin-top: 150px;
-   
+    
 }
 
 .footer-container p {
+    font-size: 24px;
     width: 1062px;
-    text-align: center;
-    
+    text-align: center;  
 }
