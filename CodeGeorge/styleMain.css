@@ -43,7 +43,6 @@ body {
     margin-top: 150px;
     margin-bottom: 10px;
     padding-bottom: 10px;
-    font-size: 64px;
     border-bottom: 1px solid #707070;
     width: 650px
 }
@@ -57,6 +56,13 @@ body {
 
 .main {
     text-align: center;
+}
+
+.header {
+    background-image: url(decorations/header-01.png);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .h1-title {
@@ -135,6 +141,16 @@ body {
     font-size: 35px;
 }
 
+.h5-1  {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.h5-2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
 .btnRSVP {
     
     padding: .27em;
@@ -152,6 +168,29 @@ body {
     background-color: rgba(0, 0, 0, -1);
     position: relative;
     cursor: pointer;
+}
+
+.event-h3-box {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    position: relative;
+}
+
+.event-h3-box img {
+    width: 160px;
+    height: 160px;
+    transform: rotate(161deg);
+    margin-inline-start: -90px;
+    padding-bottom: 50px;
+    margin-bottom: -20px;
+    
+}
+
+.event-h3-box h3 {
+    margin-inline-end: 154px;
+    height: 94.667px;
+    padding-top: 100px;
 }
 
 .church-details {
@@ -253,7 +292,6 @@ body {
     border-top: 1px solid #707070;
     width: 650px;
     margin-top: 150px;
-    
 }
 
 .footer-container p {

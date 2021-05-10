@@ -11,47 +11,46 @@
 
 <body>
     <main class="main">
-        <header>
+        <header class="header">
             <h1 class="h1-title GV-regular">The Wedding Of</h1>
             <h2 class="h2-title OS-light">Cristina & Anton</h1>
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a class="OS-light" href="#home">HOME</a>
+                        </li>
+                        <li>
+                            <a class="OS-light" href="#story">OUR STORY</a>
+                        </li>
+                        <li>
+                            <a class="OS-light" href="#event">EVENT DETAILS</a>
+                        </li>
+                        <li>
+                            <a class="OS-light" href="#map">MAP</a>
+                        </li>
+                        <li class="OS-light">
+                            <a class="OS-light" href="#">LANGUAGE</a>
+                            <select name="language" id="language"></select>
+                        </li>
+                    </ul>
+                </nav>
+
+                <section class="heroIMG-container">
+                    <div class="div-container-heriIMG">
+                        <div class="container">
+                            <button class="btnRSVP OS-light">RSVP</button>
+                        </div>
+                        <div class="date-heroIMG-container">
+                            <h5 class="OS-light h5-1">
+                                30th October 2021
+                            </h5>
+                            <h5 class="OS-light h5-2">
+                                Sofia Bulgaria
+                            </h5>
+                        </div>
+                    </div>
+                </section>
         </header>
-
-        <nav class="nav">
-            <ul>
-                <li>
-                    <a class="OS-light" href="#home">HOME</a>
-                </li>
-                <li>
-                    <a class="OS-light" href="#story">OUR STORY</a>
-                </li>
-                <li>
-                    <a class="OS-light" href="#event">EVENT DETAILS</a>
-                </li>
-                <li>
-                    <a class="OS-light" href="#map">MAP</a>
-                </li>
-                <li class="OS-light">
-                    <a class="OS-light" href="#">LANGUAGE</a>
-                    <select name="language" id="language"></select>
-                </li>
-            </ul>
-        </nav>
-
-        <section class="heroIMG-container">
-            <div class="div-container-heriIMG">
-                <div class="container">
-                    <button class="btnRSVP OS-light">RSVP</button>
-                </div>
-                <div class="date-heroIMG-container">
-                    <h5 class="OS-light">
-                        30th October 2021
-                    </h5>
-                    <h5 class="OS-light">
-                        Sofia Bulgaria
-                    </h5>
-                </div>
-            </div>
-        </section>
 
         <section class="story-container section-box">
             <div class="h3-box">
@@ -80,7 +79,10 @@
         </section>
 
         <section class="event-container section-box">
-            <div class="h3-box">
+            <div class="h3-box event-h3-box">
+                
+                    <img src="decorations/event-details.png" alt="">
+              
                 <h3 class="GV-regular h3">Event Details</h3>
             </div>
             <div class="church-details">
@@ -107,7 +109,7 @@
 
         <section class="Pre-drinks-container section-box">
             <div class="h3-box">
-                <h3 class="GV-regular h3">Reception Pre Drinks</h3>
+                <h3 class="OS-light h3">Reception Pre Drinks</h3>
             </div>
             <h5 class="OS-light h5">Hotel Balkan Loby 5.00pm</h5>
             <div class="div-img-p-predrinks">
@@ -203,10 +205,10 @@
 
     <footer class="footer-container">
         <div class="footer"></div>
-            <p class="OS-light">
-                Website designed and implemented thanks to
-                Kalina Mateeva & George Despotov
-            </p>
+        <p class="OS-light">
+            Website designed and implemented thanks to
+            Kalina Mateeva & George Despotov
+        </p>
     </footer>
 </body>
 
