@@ -21,6 +21,7 @@ body {
 }
 
 .h3 {
+    font-size: 64px;
     padding: 0;
     margin: 0;
 } 
@@ -29,7 +30,7 @@ body {
     margin-top: 0;
     padding-top: 0;
     margin-bottom: 40px;
-    font-size: 40px;
+    font-size: 32px;
 }
 
 .p {
@@ -39,8 +40,7 @@ body {
 }
 
 .h3-box {
-    font-size: 64px;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #707070;
@@ -96,6 +96,8 @@ body {
 
 .nav a {
     padding: 1em;
+    padding-top: 12px;
+    padding-bottom: 12px;
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
@@ -116,7 +118,7 @@ body {
     width: 1062px;
     height: 705px;
     margin:0 auto;
-    border: 2px solid #707070;
+    border: 1px solid #707070;
     border-radius: 10px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -152,7 +154,6 @@ body {
 }
 
 .btnRSVP {
-    
     padding: .27em;
     height: 55px;
     width: 164px;
@@ -170,28 +171,7 @@ body {
     cursor: pointer;
 }
 
-.event-h3-box {
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    position: relative;
-}
 
-.event-h3-box img {
-    width: 160px;
-    height: 160px;
-    transform: rotate(161deg);
-    margin-inline-start: -90px;
-    padding-bottom: 50px;
-    margin-bottom: -20px;
-    
-}
-
-.event-h3-box h3 {
-    margin-inline-end: 154px;
-    height: 94.667px;
-    padding-top: 100px;
-}
 
 .church-details {
     font-size: 40px;
@@ -217,22 +197,65 @@ body {
 .curchIMG {
     width: 1062px;
     height: 705px;
-    border: 2px solid #707070;
+    border: 1px solid #707070;
     border-radius: 10px;
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 19%);
+}
+
+.event-h3-box {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    position: relative;
+    height: 170px;
+}
+
+.event-h3-box img {
+    width: 142px;
+    height: 146px;
+    transform: rotate(161deg);
+    margin-inline-start: -90px;
+    padding-bottom: 50px;
+    margin-bottom: -20px;
+    margin-top: -10px;
+}
+
+.event-h3-box h3 {
+    margin-inline-end: 178px;
+    padding-top: 100px;
+}
+
+.pre-h3-box {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    position: relative;
+}
+
+.pre-h3-box h3 {
+    margin-inline-start: 137px;
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+
+.pre-h3-box img {
+    width: 213px;
+    height: 178px;
+    margin-inline-end: -213px;
+    margin-bottom: -106.5px;
 }
 
 .div-img-p-predrinks {
     display: flex;
     flex-direction: row-reverse;
     position: relative;
-    height: 531px;
+    height: auto;
 }
 
-.Pre-drinks-container img {
+.pre-img {
     width: 531px;
-    height: 531px;
-    border: 2px solid #707070;
+    height: auto;
+    border: 1px solid #707070;
     border-radius: 10px;
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 19%)
 }
@@ -243,7 +266,7 @@ body {
 
 .Pre-drinks-p {
     width: 511px;
-    height: 705px;
+    height: auto;
     margin-top: 0px;
     margin-right: 20px;
 }
@@ -253,34 +276,39 @@ body {
     font-size: 24px;
 }
 
+.reception-container h3 {
+    font-size: 40px;
+    margin: 0px;
+}
+
 .reception-container img {
     width: 1062px;
     height: 705px;
-    border: 2px solid #707070;
+    border: 1px solid #707070;
     border-radius: 10px;
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 19%);
 }
 
 .div-img-p-map {
     display: flex;
-    flex-direction: row-reverse;
-    position: relative;
+    flex-direction: row;
     align-items: center;
+    height: 490px;
 }
 
 .map-container img {
     width: 531px;
-    height: 705px;
-    border: 2px solid #707070;
+    height: 490px;
+    border: 1px solid #707070;
     border-radius: 10px;
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 19%)
 }
 
 .map-p {
     width: 511px;
-    height: 705px;
-    margin-top: 0px;
-    margin-right: 20px;
+    height: auto;
+    margin-top: -150px;
+    margin-left: 20px;
 }
 
 .map-container p {
@@ -288,14 +316,39 @@ body {
     margin-top: 0px;
 }
 
-.footer {
-    border-top: 1px solid #707070;
-    width: 650px;
-    margin-top: 150px;
+.footer-container {
+    
+    background-image: url(decorations/footer.png);
+    background-position: bottom;
+    background-size: 100%;
 }
 
-.footer-container p {
+.footer {
+    flex: 0 0 auto;
+    max-width: 650px;
+    border-top: 1px solid #707070;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    margin-top: 100px;
+}
+
+.p1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: 24px;
-    width: 1062px;
-    text-align: center;  
+    text-align: center;
+}
+
+.p2 {
+    margin-top: 0px;
+    margin-bottom: 250px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.footer-container img {
+   height: 469px;
+   width: 2145px;
 }
