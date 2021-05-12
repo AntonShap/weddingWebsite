@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleMain.css">
-    <title>Wedding of Cristina & Anton</title>
 </head>
 
 <body>
     <main class="main">
+        <title>Wedding of Cristina & Anton</title>
         <header class="header">
             <h1 class="h1-title GV-regular">The Wedding Of</h1>
             <h2 class="h2-title OS-light">Cristina & Anton</h1>
                 <nav class="nav">
                     <ul>
                         <li>
-                            <a class="OS-light" href="#home">HOME</a>
+                            <a class="OS-light" href="/">HOME</a>
                         </li>
                         <li>
                             <a class="OS-light" href="#story">OUR STORY</a>
@@ -28,9 +28,13 @@
                         <li>
                             <a class="OS-light" href="#map">MAP</a>
                         </li>
-                        <li class="OS-light">
-                            <a class="OS-light" href="#">LANGUAGE</a>
-                            <select name="language" id="language"></select>
+                        <li class="OS-light dropdown">
+                            <a class="dropBTN" href="#">LANGUAGE</a>
+                            <div class="dropdown-content">
+                                <a href="englishPage">English</a>
+                                <a href="bulgarianPage">Български</a>
+                                <a href="romanianPage">Română</a>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -212,6 +216,7 @@
             </p>
         </div>
     </footer>
+    <script src="showLanguage.js"></script>
 </body>
 
 </html>
