@@ -18,6 +18,14 @@ body {
 
 .GV-regular {
     font-family: 'Great Vibes', cursive;
+    /*
+    font-family: 'Good Vibration Cyrillic';
+    */
+}
+
+.GV-Cyrillic {
+    font-family: 'Good Vibration Cyrillic';
+    
 }
 
 .h3 {
@@ -112,8 +120,11 @@ body {
 
 .dropdown {
     display: inline;
+    position: relative;
+    /*
     align-items: center;
     align-content: center;
+*/
     padding-top: 12px;
     padding-bottom: 12px;
     text-decoration: none;
@@ -123,16 +134,22 @@ body {
 
 .dropdown-content {
     display: none;
-    position: relative;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 20px;
     background-color: #E4DBD2;
     min-width: 160px;
-    max-width: 1065px;
+    max-width: 160px;
+    /*
     border: 1px solid #707070;
+    */
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 2;
+  }
+
+  .btn-Menu-div {
+      display: inline-block;
   }
 
   .dropdown-content a {
@@ -361,6 +378,7 @@ body {
     
     background-image: url(decorations/footer.png);
     background-position: bottom;
+    background-repeat: no-repeat;
     background-size: 100%;
 }
 
