@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300&display=swap');
 
-
+@font-face {
+    font-family:'Good Vibration Cyrillic' ;
+    src: url('fonts/Good-Vibes-Pro.woff') format('woff');
+}
 
 * {
     color: #707070;
@@ -24,7 +27,7 @@ body {
 }
 
 .GV-Cyrillic {
-    font-family: 'Good Vibration Cyrillic';
+    font-family: 'Good Vibes Pro';
     
 }
 

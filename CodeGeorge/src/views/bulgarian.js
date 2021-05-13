@@ -3,7 +3,7 @@ import { html } from '../../node_modules/lit-html/lit-html.js';
 const bulgarianTemplate = () => html`
         <title>Свадбата</title>
         <header class="header" id="bg">
-            <h1 class="h1-title GV-regular">Свадбата на</h1>
+            <h1 class="h1-title GV-Cyrillic">Свадбата на</h1>
             <h2 class="h2-title OS-light">Кристина и Анатон</h1>
                 <nav class="nav">
                     <ul>
