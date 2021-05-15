@@ -232,7 +232,100 @@ body {
     cursor: pointer;
 }
 
+.carousel {
+    position: relative;
+    height: 460px;
+    width: 990px;;
+    margin-top: 30px;
+}
 
+.carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+
+}
+
+.carousel__track-container {
+    height: 460px;
+    position:relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*hides the slide track images not being one next to each other*/
+    overflow: hidden; 
+
+}
+
+.carousel__track {
+    padding: 0;
+    margin:0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in; 
+    
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel__button {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel__button--left {
+    left: -40px;
+
+}
+
+.carousel__button--right {
+    right: -40px;
+    
+
+}
+
+.r {
+    color: #707070;
+}
+
+.carousel__button img {
+    width: 12px;
+
+}
+
+.carousel__nav {
+    /*background: pink;*/
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #707070;
+    margin: 0 12px;
+}
+
+.carousel__indicator.current-slide {
+    background: rgba(0,0,0,.35);
+}
+
+.is-hidden { display: none; }
 
 .church-details {
     font-size: 40px;

@@ -19,14 +19,14 @@ const englishTemplate = () => html`
                         <li>
                             <a class="OS-light" href="#map">MAP</a>
                         </li>
-                        <li  class="OS-light dropdown">
-                        <div class="btn-Menu-div">
-                            <a @mouseover=${onClickk} class="dropBTN" href="#">LANGUAGE</a>
-                            <div class="dropdown-content">
-                                <a href="/englishPage">English</a>
-                                <a href="/bulgarianPage">Български</a>
-                                <a href="romanianPage">Română</a>
-                            </div>
+                        <li class="OS-light dropdown">
+                            <div class="btn-Menu-div">
+                                <a @click=${onClickk} class="dropBTN" href="#">LANGUAGE</a>
+                                <div class="dropdown-content">
+                                    <a href="/englishPage">English</a>
+                                    <a href="/bulgarianPage">Български</a>
+                                    <a href="/romanianPage">Română</a>
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -71,7 +71,30 @@ const englishTemplate = () => html`
             </p>
         
             <div class="carousel">
-        
+                <button class="carousel__button carousel__button--left is-hidden">
+                    <img src="decorations/angle-left-solid.svg" alt=" ">
+                </button>
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide current-slide">
+                            <img class="carousel__image" src="images/1.jpg" alt=" ">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/2.jpg" alt=" ">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/3.jpg" alt=" ">
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel__button carousel__button--right">
+                    <img class="r" src="decorations/angle-right-solid.svg" alt=" ">
+                </button>
+                <div class="carousel__nav">
+                    <button class="carousel__indicator current-slide"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                </div>
             </div>
         </section>
         
@@ -197,7 +220,7 @@ const englishTemplate = () => html`
                 and we will have to ship everything on the other side of Europe.
             </p>
         </section>
-
+        
         <footer class="footer-container section-box">
             <div class="footer">
                 <p class="OS-light p1">
@@ -212,6 +235,7 @@ const englishTemplate = () => html`
 
 export function enPage(ctx) {
     ctx.render(englishTemplate());
+    carousel();
 }
 
 function onClickk() {
@@ -219,4 +243,100 @@ function onClickk() {
     const div = document.querySelector('.dropdown-content');
     let isVisible = div.style.display == 'block';
     div.style.display = isVisible ? 'none' : 'block';
+}
+
+function carousel() {
+
+    const track = document.querySelector('.carousel__track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.carousel__button--right');
+    const prevButton = document.querySelector('.carousel__button--left');
+    const dotsNav = document.querySelector('.carousel__nav');
+    const dots = Array.from(dotsNav.children);
+
+    const slideWidth = slides[0].getBoundingClientRect().width;
+
+    //arrange the slides next to one another
+
+    //slides[0].style.left=slideWidth * 0 + 'px';
+    //slides[1].style.left=slideWidth * 1 + 'px';
+    //slides[2].style.left=slideWidth * 2 + 'px';
+
+    const setSlidePosition = (slide, index) => {
+        slide.style.left = slideWidth * index + 'px';
+    };
+    slides.forEach(setSlidePosition);
+
+    const moveToSlide = (track, currentSlide, targetSlide) => {
+        track.style.transform = 'translateX(-' + targetSlide.style.left + ')'
+        currentSlide.classList.remove('current-slide');
+        targetSlide.classList.add('current-slide');
+    }
+
+    const updateDots = (currentDot, targetDot) => {
+        currentDot.classList.remove('current-slide');
+        targetDot.classList.add('current-slide');
+    }
+
+    const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
+        if (targetIndex === 0) {
+            prevButton.classList.add('is-hidden');
+            nextButton.classList.remove('is-hidden');
+        } else if (targetIndex === slides.length - 1) {
+            prevButton.classList.remove('is-hidden');
+            nextButton.classList.add('is-hidden');
+        } else {
+            prevButton.classList.remove('is-hidden');
+            nextButton.classList.remove('is-hidden');
+        }
+    }
+
+
+    //when i click left, move slides to the left
+    prevButton.addEventListener('click', e => {
+        const currentSlide = track.querySelector('.current-slide');
+        const prevSlide = currentSlide.previousElementSibling;
+        const currentDot = dotsNav.querySelector('.current-slide')
+        const prevDot = currentDot.previousElementSibling;
+        const prevIndex = slides.findIndex(slide => slide === prevSlide);
+
+
+        moveToSlide(track, currentSlide, prevSlide);
+        updateDots(currentDot, prevDot);
+        hideShowArrows(slides, prevButton, nextButton, prevIndex);
+
+    })
+
+    //when i click right, move slides to the right
+
+    nextButton.addEventListener('click', e => {
+        const currentSlide = track.querySelector('.current-slide');
+        const nextSlide = currentSlide.nextElementSibling;
+        const currentDot = dotsNav.querySelector('.current-slide')
+        const nextDot = currentDot.nextElementSibling;
+        const nextIndex = slides.findIndex(slide => slide === nextSlide);
+
+        moveToSlide(track, currentSlide, nextSlide);
+        updateDots(currentDot, nextDot);
+        hideShowArrows(slides, prevButton, nextButton, nextIndex);
+    })
+
+    dotsNav.addEventListener('click', e => {
+        //what indicator was clicked on ? 
+        const targetDot = e.target.closest('button');
+
+        if (!targetDot) return;
+
+        const currentSlide = track.querySelector('.current-slide');
+        const currentDot = dotsNav.querySelector('.current-slide');
+        const targetIndex = dots.findIndex(dot => dot === targetDot);
+        //console.log(targetIndex);
+        const targetSlide = slides[targetIndex];
+
+        moveToSlide(track, currentSlide, targetSlide);
+        updateDots(currentDot, targetDot);
+
+        hideShowArrows(slides, prevButton, nextButton, targetIndex);
+    })
+
 }
