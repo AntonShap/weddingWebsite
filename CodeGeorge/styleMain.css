@@ -364,6 +364,13 @@ body {
     height: 170px;
 }
 
+.h3-event {
+    margin-inline-end: 63px;
+    margin-bottom: 0px;
+    margin-top: 74px;
+    font-size: 64px;
+}
+
 .event-h3-box img {
     width: 142px;
     height: 146px;
@@ -374,9 +381,12 @@ body {
     margin-top: -10px;
 }
 
-.event-h3-box h3 {
+.h3-en {
     margin-inline-end: 178px;
-    padding-top: 100px;
+    margin-top: 94px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 64px;
 }
 
 .pre-h3-box {
@@ -386,7 +396,12 @@ body {
     position: relative;
 }
 
-.pre-h3-box h3 {
+.h3-pre {
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+
+.h3-pre-en {
     margin-inline-start: 137px;
     margin-bottom: 0px;
     font-size: 40px;

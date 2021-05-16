@@ -5,6 +5,20 @@ import { bgPage } from './views/bulgarian.js';
 import { enPage } from './views/english.js';
 import { romPage } from './views/romanian.js';
 
+// window.addEventListener('onbeforeunload', (e) => onRefresh);
+
+window.onbeforeunload = (event) => {
+    // const e = event || window.event;
+    // // Cancel the event
+    // e.preventDefault();
+    // if (e) {
+    //   e.returnValue = ''; // Legacy method for cross browser support
+    // }
+    onRefresh()
+    return ''; // Legacy method for cross browser support
+    
+  };
+
 carousel();
 showLanguges();
 
@@ -19,6 +33,14 @@ page.start();
 function decorator(ctx, next) {
     ctx.render = (content) => render(content, main);
     next();
+}
+
+function onRefresh(e) {
+    location.replace('http://127.0.0.1:5500')
+    console.log('cici');
+  
+// page('/bulgarianPage', decorator, bgPage);
+
 }
 
 function showLanguges() {
