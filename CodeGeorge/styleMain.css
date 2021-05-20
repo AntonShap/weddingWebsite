@@ -294,7 +294,8 @@ body {
 
 }
 
-.r {
+.carousel-img-icon-left-rigth {
+    opacity: 0.4;
     color: #707070;
 }
 
@@ -302,15 +303,15 @@ body {
     width: 12px;
 
 }
-
+/*
 .carousel__nav {
-    /*background: pink;*/
+    /*background: pink;
     display: flex;
     justify-content: center; 
     margin-top: 20px;
     padding: 10px 0;
     cursor: pointer;
-}
+} 
 
 .carousel__indicator {
     border: 0;
@@ -324,7 +325,7 @@ body {
 .carousel__indicator.current-slide {
     background: rgba(0,0,0,.35);
 }
-
+ */
 .is-hidden { display: none; }
 
 .church-details {
@@ -368,6 +369,14 @@ body {
     margin-inline-end: 63px;
     margin-bottom: 0px;
     margin-top: 74px;
+    font-size: 64px;
+}
+
+.h3-rom {
+    margin-inline-end: 93px;
+    margin-top: 94px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
     font-size: 64px;
 }
 

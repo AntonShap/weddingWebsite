@@ -1,9 +1,9 @@
-import page from '../node_modules/page/page.mjs';
-import { render } from '../node_modules/lit-html/lit-html.js';
+// import page from '../node_modules/page/page.mjs';
+// import { render } from '../node_modules/lit-html/lit-html.js';
 
-import { bgPage } from './views/bulgarian.js';
-import { enPage } from './views/english.js';
-import { romPage } from './views/romanian.js';
+// import { bgPage } from './views/bulgarian.js';
+// import { enPage } from './views/english.js';
+// import { romPage } from './views/romanian.js';
 
 // window.addEventListener('onbeforeunload', (e) => onRefresh);
 
@@ -11,26 +11,26 @@ import { romPage } from './views/romanian.js';
 carousel();
 showLanguges();
 
-const main = document.querySelector('main');
+// const main = document.querySelector('main');
 
-page('#/bulgarianPage', decorator, bgPage);
-page('/englishPage', decorator, enPage);
-page('/romanianPage', decorator, romPage);
+// page('/bulgarianPage', decorator, bgPage);
+// page('/englishPage', decorator, enPage);
+// page('/romanianPage', decorator, romPage);
 
-page.start();
-window.onbeforeunload = function(event) { location.assign("http://127.0.0.1:5500/index.html"); };
-function decorator(ctx, next) {
-    ctx.render = (content) => render(content, main);
-    next();
-}
+// page.start();
+//window.onbeforeunload = function(event) { location.assign("http://127.0.0.1:5500/index.html"); };
+// function decorator(ctx, next) {
+//     ctx.render = (content) => render(content, main);
+//     next();
+// }
 
-function onRefresh(e) {
-    location.replace('http://127.0.0.1:5500/')
-    console.log('cici');
-  
+// function onRefresh(e) {
+//     location.replace('http://127.0.0.1:5500/')
+//     console.log('cici');
+
 // page('/bulgarianPage', decorator, bgPage);
 
-}
+//}
 
 function showLanguges() {
     const languageBtn = document.querySelector('.dropBTN');
@@ -44,15 +44,14 @@ function showLanguges() {
     }
 }
 
- function carousel() {
+function carousel() {
 
     const track = document.querySelector('.carousel__track');
     const slides = Array.from(track.children);
     const nextButton = document.querySelector('.carousel__button--right');
     const prevButton = document.querySelector('.carousel__button--left');
-    const dotsNav = document.querySelector('.carousel__nav');
-    const dots = Array.from(dotsNav.children);
-    console.log(track);
+    // const dotsNav = document.querySelector('.carousel__nav');
+    // const dots = Array.from(dotsNav.children);
 
     const slideWidth = slides[0].getBoundingClientRect().width;
 
@@ -68,20 +67,19 @@ function showLanguges() {
     slides.forEach(setSlidePosition);
 
     const moveToSlide = (track, currentSlide, targetSlide) => {
-        console.log(track);
-        console.log( targetSlide.style.left);
 
         track.style.transform = 'translateX(-' + targetSlide.style.left + ')'
         currentSlide.classList.remove('current-slide');
         targetSlide.classList.add('current-slide');
     }
 
-    const updateDots = (currentDot, targetDot) => {
-        currentDot.classList.remove('current-slide');
-        targetDot.classList.add('current-slide');
-    }
+    // const updateDots = (currentDot, targetDot) => {
+    //     currentDot.classList.remove('current-slide');
+    //     targetDot.classList.add('current-slide');
+    // }
 
     const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
+        console.log(targetIndex);
         if (targetIndex === 0) {
             prevButton.classList.add('is-hidden');
             nextButton.classList.remove('is-hidden');
@@ -99,13 +97,13 @@ function showLanguges() {
     prevButton.addEventListener('click', e => {
         const currentSlide = track.querySelector('.current-slide');
         const prevSlide = currentSlide.previousElementSibling;
-        const currentDot = dotsNav.querySelector('.current-slide')
-        const prevDot = currentDot.previousElementSibling;
+        // const currentDot = dotsNav.querySelector('.current-slide')
+        // const prevDot = currentDot.previousElementSibling;
         const prevIndex = slides.findIndex(slide => slide === prevSlide);
 
 
         moveToSlide(track, currentSlide, prevSlide);
-        updateDots(currentDot, prevDot);
+        //updateDots(currentDot, prevDot);
         hideShowArrows(slides, prevButton, nextButton, prevIndex);
 
     })
@@ -115,31 +113,31 @@ function showLanguges() {
     nextButton.addEventListener('click', e => {
         const currentSlide = track.querySelector('.current-slide');
         const nextSlide = currentSlide.nextElementSibling;
-        const currentDot = dotsNav.querySelector('.current-slide')
-        const nextDot = currentDot.nextElementSibling;
+        //const currentDot = dotsNav.querySelector('.current-slide')
+        //const nextDot = currentDot.nextElementSibling;
         const nextIndex = slides.findIndex(slide => slide === nextSlide);
 
         moveToSlide(track, currentSlide, nextSlide);
-        updateDots(currentDot, nextDot);
+        //updateDots(currentDot, nextDot);
         hideShowArrows(slides, prevButton, nextButton, nextIndex);
     })
 
-    dotsNav.addEventListener('click', e => {
-        //what indicator was clicked on ? 
-        const targetDot = e.target.closest('button');
+    // dotsNav.addEventListener('click', e => {
+    //     //what indicator was clicked on ? 
+    //     const targetDot = e.target.closest('button');
 
-        if (!targetDot) return;
+    //     if (!targetDot) return;
 
-        const currentSlide = track.querySelector('.current-slide');
-        const currentDot = dotsNav.querySelector('.current-slide');
-        const targetIndex = dots.findIndex(dot => dot === targetDot);
-        //console.log(targetIndex);
-        const targetSlide = slides[targetIndex];
+    //     const currentSlide = track.querySelector('.current-slide');
+    //     const currentDot = dotsNav.querySelector('.current-slide');
+    //     const targetIndex = dots.findIndex(dot => dot === targetDot);
+    //     //console.log(targetIndex);
+    //     const targetSlide = slides[targetIndex];
 
-        moveToSlide(track, currentSlide, targetSlide);
-        updateDots(currentDot, targetDot);
+    //     moveToSlide(track, currentSlide, targetSlide);
+    //     updateDots(currentDot, targetDot);
 
-        hideShowArrows(slides, prevButton, nextButton, targetIndex);
-    })
+    //     hideShowArrows(slides, prevButton, nextButton, targetIndex);
+    // })
 
 }
