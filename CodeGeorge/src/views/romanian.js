@@ -1,9 +1,9 @@
 import { html } from '../../node_modules/lit-html/lit-html.js';
 
 const romanianTemplate = () => html`
-        <title>Nunta de Cristina și Anton</title>
+        <title>Ne casatorim Cristina și Anton</title>
         <header class="header" id="rom">
-            <h1 class="h1-title GV-regular">Nunta de</h1>
+            <h1 class="h1-title GV-regular">Ne casatorim</h1>
             <h2 class="h2-title OS-light">Cristina și Anton</h1>
                 <nav class="nav">
                     <ul>
