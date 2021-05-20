@@ -7,36 +7,25 @@ import { romPage } from './views/romanian.js';
 
 // window.addEventListener('onbeforeunload', (e) => onRefresh);
 
-window.onbeforeunload = (event) => {
-    // const e = event || window.event;
-    // // Cancel the event
-    // e.preventDefault();
-    // if (e) {
-    //   e.returnValue = ''; // Legacy method for cross browser support
-    // }
-    onRefresh()
-    return ''; // Legacy method for cross browser support
-    
-  };
 
 carousel();
 showLanguges();
 
 const main = document.querySelector('main');
 
-page('/bulgarianPage', decorator, bgPage);
+page('#/bulgarianPage', decorator, bgPage);
 page('/englishPage', decorator, enPage);
 page('/romanianPage', decorator, romPage);
 
 page.start();
-
+window.onbeforeunload = function(event) { location.assign("http://127.0.0.1:5500/index.html"); };
 function decorator(ctx, next) {
     ctx.render = (content) => render(content, main);
     next();
 }
 
 function onRefresh(e) {
-    location.replace('http://127.0.0.1:5500')
+    location.replace('http://127.0.0.1:5500/')
     console.log('cici');
   
 // page('/bulgarianPage', decorator, bgPage);
