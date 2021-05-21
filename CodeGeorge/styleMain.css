@@ -48,7 +48,7 @@ body {
     font-size: 24px;
     width: 1064px;
     margin-bottom: 0px;
-    text-align: left;
+    text-align: justify;
 }
 
 .h3-box {
@@ -338,14 +338,15 @@ body {
     position: relative;
 }
 
-.divImgChurch {
+.curch-icon {
     margin-top: 8px;
+    padding-right: 2px;
     width: 40px;
     height: 40px;
 }
 
 .church-details h4 {
-    padding: 0;
+    padding-left: 2px;
     margin: 0;
 }
 
@@ -405,18 +406,46 @@ body {
     position: relative;
 }
 
-.h3-pre {
+.preDrincsIcon {
+    margin-left: 100px;
+    margin-top: 46px;
+    width: 40px;
+    height: 40px;
+}
+
+.preDrincsIconBG {
+    margin-top: 48px;
+    margin-left: 170px;
+    width: 40px;
+    height: 40px;
+}
+
+.preDrincsIconRO {
+    margin-left: 105px;
+    margin-top: 46px;
+    width: 40px;
+    height: 40px;
+}
+
+.h3-pre-bg {
+    margin-right: 170px;
     margin-bottom: 0px;
     font-size: 40px;
 }
 
 .h3-pre-en {
-    margin-inline-start: 137px;
+    margin-right: 100px;
     margin-bottom: 0px;
     font-size: 40px;
 }
 
-.pre-h3-box img {
+.h3-pre-ro {
+    margin-right: 105px;
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+
+.imgFlower {
     width: 213px;
     height: 178px;
     margin-inline-end: -213px;
@@ -432,7 +461,8 @@ body {
 
 .pre-img {
     width: 531px;
-    height: auto;
+    height: 490px;
+    object-fit: cover;
     border: 1px solid #707070;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -452,14 +482,31 @@ body {
 .Pre-drinks-container p {
     margin-top: 0px;
     font-size: 24px;
+    text-align: left;
 }
 
-.reception-container h3 {
+.reception-h3-icon {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.h3-reception {
     font-size: 40px;
-    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 2px;
 }
 
-.reception-container img {
+.reception-cake-img {
+    width: 40px;
+    height: 40px;
+    padding-right: 2px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.reception-img {
     width: 1062px;
     height: 705px;
     border: 1px solid #707070;
@@ -490,6 +537,7 @@ body {
 }
 
 .map-container p {
+    text-align: left;
     font-size: 24px;
     margin-top: 0px;
 }
@@ -516,14 +564,14 @@ body {
 .p1 {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
 }
 
 .p2 {
     margin-top: 0px;
     margin-bottom: 250px;
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
 }
 
