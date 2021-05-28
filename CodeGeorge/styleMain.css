@@ -237,34 +237,34 @@ body {
     justify-content: center;
     align-content: center;
     position: relative;
-    height: 170px;
+    height: 90px;
 }
 
 .story-ring-img{
     width: 150px;
     height: 150px;
-    margin-top: 52px;
+    margin-top: -30px;
     margin-right: -40px;
 }
 
 .story-ring-img-bg{
     width: 150px;
     height: 150px;
-    margin-top: 52px;
+    margin-top: -30px;
     margin-right: -40px;
 }
 
 .story-ring-img-rom{
     width: 150px;
     height: 150px;
-    margin-top: 52px;
+    margin-top: -30px;
     margin-right: -40px;
 }
 
 .h3-story-en{
     font-size: 64px;
+    margin-top: 0px;
     margin-bottom: 0px;
-    margin-top: 86px;
     /*
     margin-left: 207px;
     */
@@ -273,13 +273,14 @@ body {
 .h3-story-bg{
     font-size: 64px;
     margin-bottom: 0px;
-    margin-top: 84px;
+    margin-top: 0px;
 }
 
 .h3-story-rom{
     font-size: 64px;
     margin-bottom: 0px;
-    margin-top: 92px;
+    margin-top: 0px;
+    padding-top: 10px;
 }
 
 .carousel {
