@@ -232,6 +232,59 @@ body {
     cursor: pointer;
 }
 
+.story-h3-box {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    height: 170px;
+}
+
+.story-ring-img{
+    width: 150px;
+    height: 150px;
+    margin-top: 52px;
+    margin-right: -30px;
+}
+
+.story-ring-img-bg{
+    width: 150px;
+    height: 150px;
+    margin-top: 52px;
+    margin-right: -30px;
+}
+
+.story-ring-img-rom{
+    width: 150px;
+    height: 150px;
+    margin-top: 52px;
+}
+
+.h3-story-en{
+    font-size: 64px;
+    margin-bottom: 0px;
+    margin-top: 86px;
+    /*
+    margin-left: 207px;
+    */
+}
+
+.h3-story-bg{
+    font-size: 64px;
+    margin-bottom: 0px;
+    margin-top: 84px;
+    margin-right: -17px;
+    margin-left: auto;
+}
+
+.h3-story-rom{
+    font-size: 64px;
+    margin-bottom: 0px;
+    margin-top: 92px;
+    margin-left: auto;
+    margin-right: -11px;
+}
+
 .carousel {
     position: relative;
     height: 660px;
@@ -366,6 +419,20 @@ body {
     height: 170px;
 }
 
+.event-h3-box-bg {
+    display: flex;
+    position: relative;
+    height: 170px;
+}
+
+.h3-event-bg {
+    margin-left: -19px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 74px;
+    font-size: 64px;
+}
+
 .h3-event {
     margin-inline-end: 63px;
     margin-bottom: 0px;
@@ -381,7 +448,14 @@ body {
     font-size: 64px;
 }
 
-.event-h3-box img {
+.rose-event-img {
+    width: 192px;
+    height: 196px;
+    margin-inline-start: -110px;
+    margin-top: 10px;
+}
+
+.roIMG {
     width: 142px;
     height: 146px;
     transform: rotate(161deg);
