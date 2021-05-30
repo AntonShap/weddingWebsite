@@ -4,36 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/styleForm.css">
+    <link rel="icon" href="/images/tabIcon.PNG">
+    <title>Form The Wedding of</title>
 </head>
 <body>
+    <div class="form-box">
+        <h3>Form</h3>
+    </div>
+    
 
-    <form action="/thankYou.html" name="Registeres Guests EN" method="POST" data-netlify="true">
-        <div>
-            <label for="Name">Name</label>
-            <input placeholder="John" type= "text" name ="name" id="name" required>
+    <form action="/thankYouEN.html" name="Registeres Guests EN" method="POST" data-netlify="true">
+        <div class="fillIn">
+            <label for="firstName">First Name</label>
+            <br>
+            <input placeholder="John" type= "text" name ="firstName" id="firstName" required>
         </div>
         
-        <div>
+        <div class="fillIn">
             <label for="surname">Surname</label>
+            <br>
             <input placeholder="Smith" type= "text" name = "surname" id="surname" required>
         </div>
         
-        <div>
+        <div class="fillIn">
             <label for="e-mail">Email</label>
+            <br>
             <input placeholder="john.smith@gmail.com" type="email" name = "e-mail" id="e-mail" required>
         </div>
 
-        <div>
+        <br>
+
+        <div id="checkbox">
             <label for="vegeterian">Vegeterian</label>
             <input type="checkbox" name="vegeterian" id="vegeterian">
         </div>
+        <br>
 
-        <button type="reset">Reset</button>
+        <button> Plus One </button>
         <button type="submit">Submit</button>
         
-       
+        <br>
+        <br>
     </form>
+
+    <h3>Thank you</h3>
     
 </body>
 </html>

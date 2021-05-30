@@ -232,6 +232,13 @@ body {
     cursor: pointer;
 }
 
+/* this is used in the thank you page*/
+a{
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .story-h3-box {
     display: flex;
     justify-content: center;
