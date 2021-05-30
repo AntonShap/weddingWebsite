@@ -68,24 +68,31 @@ button{
     font-size: 14px;
     font-weight: bold;
     border-radius: 14px;
+    font-family: 'Open Sans', sans-serif;
     border: 1px solid #707070;
     background-color: #fbfefb;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* this is used in the thank you / see you soon page*/
+
+
 button:hover {
+    color:white;
+    border: 2px solid #707070;
     background-color: rgba(0, 0, 0, -1);
     position: relative;
     cursor: pointer;
 }
 
-/* this is used in the thank you page*/
+
 a{
     background-color: rgba(0, 0, 0, 0);
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     color: #707070;
     font-weight: bold;
+    
 }
 
 
