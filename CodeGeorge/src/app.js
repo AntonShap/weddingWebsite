@@ -10,6 +10,7 @@
 
 carousel();
 showLanguges();
+showMenu();
 
 // const main = document.querySelector('main');
 
@@ -37,10 +38,41 @@ function showLanguges() {
     languageBtn.addEventListener('click', onClick);
 
     function onClick() {
-
+        console.log(languageBtn);
         const div = document.querySelector('.dropdown-content');
-        let isVisible = div.style.display == 'block';
-        div.style.display = isVisible ? 'none' : 'block';
+        const divBG = document.querySelector('.dropdown-content-bg');
+        const divRO = document.querySelector('.dropdown-content-ro');
+
+        if (div) {
+
+            let isVisible = div.style.display == 'block';
+            div.style.display = isVisible ? 'none' : 'block';
+
+        } else if (divBG) {
+
+            let isVisibleBG = divBG.style.display == 'block';
+            divBG.style.display = isVisibleBG ? 'none' : 'block';
+        
+        } else if (divRO) {
+
+            let isVisibleRO = divRO.style.display == 'block';
+            divRO.style.display = isVisibleRO ? 'none' : 'block';
+    
+        }
+    }
+}
+
+function showMenu() {
+
+    const menuBtn = document.querySelector('.taggle-btn');
+    
+    menuBtn.addEventListener('click', onClick);
+    
+    function onClick() {
+        
+        const menuDiv = document.querySelector('.dpopdownMENU');
+        let isVisiblee = menuDiv.style.display == 'flex';
+        menuDiv.style.display = isVisiblee ? 'none' : 'flex';
     }
 }
 
@@ -57,9 +89,9 @@ function carousel() {
 
     //arrange the slides next to one another
 
-    slides[0].style.left=slideWidth * 0 + 'px';
-    slides[1].style.left=slideWidth * 1 + 'px';
-    slides[2].style.left=slideWidth * 2 + 'px';
+    slides[0].style.left = slideWidth * 0 + 'px';
+    slides[1].style.left = slideWidth * 1 + 'px';
+    slides[2].style.left = slideWidth * 2 + 'px';
 
     const setSlidePosition = (slide, index) => {
         slide.style.left = slideWidth * index + 'px';
