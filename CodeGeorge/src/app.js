@@ -52,12 +52,12 @@ function showLanguges() {
 
             let isVisibleBG = divBG.style.display == 'block';
             divBG.style.display = isVisibleBG ? 'none' : 'block';
-        
+
         } else if (divRO) {
 
             let isVisibleRO = divRO.style.display == 'block';
             divRO.style.display = isVisibleRO ? 'none' : 'block';
-    
+
         }
     }
 }
@@ -65,16 +65,17 @@ function showLanguges() {
 function showMenu() {
 
     const menuBtn = document.querySelector('.taggle-btn');
-    
+
     menuBtn.addEventListener('click', onClick);
-    
+
     function onClick() {
-        
+
         const menuDiv = document.querySelector('.dpopdownMENU');
         let isVisiblee = menuDiv.style.display == 'flex';
         menuDiv.style.display = isVisiblee ? 'none' : 'flex';
     }
 }
+
 
 function carousel() {
 
@@ -124,19 +125,18 @@ function carousel() {
         }
     }
 
-
     //when i click left, move slides to the left
     prevButton.addEventListener('click', e => {
         const currentSlide = track.querySelector('.current-slide');
         const prevSlide = currentSlide.previousElementSibling;
+        const prevIndex = slides.findIndex(slide => slide === prevSlide);
         // const currentDot = dotsNav.querySelector('.current-slide')
         // const prevDot = currentDot.previousElementSibling;
-        const prevIndex = slides.findIndex(slide => slide === prevSlide);
 
 
         moveToSlide(track, currentSlide, prevSlide);
-        //updateDots(currentDot, prevDot);
         hideShowArrows(slides, prevButton, nextButton, prevIndex);
+        //updateDots(currentDot, prevDot);
 
     })
 

@@ -63,10 +63,10 @@ body {
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    text-align: left;
     margin-top: 40px;
-    width: 150px;
-    height: 240px;
+    width: 300px;
+    height: auto;
     background-color: #E4DBD2;
     border: 1px solid #707070;
 }
@@ -174,15 +174,13 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
     margin: 0.3em;
-    text-decoration: none;
-    font-size: 16px;
     font-weight: bold;
-    text-decoration: none;
+    font-size: 24px;
 }
 
 .dpopdownMENU li {
     text-decoration: none;
-    display: inline-flex;
+    display: flex;
 }
 
 .dpopdownMENU ul {
@@ -1174,7 +1172,23 @@ a{
         font-size: 48px;
     }
 
+    .h3-story-bg {
+        font-size: 48px;
+    }
+
+    .h3-story-rom {
+        font-size: 48px;
+    }
+
     .story-ring-img {
+        display: none;
+    }
+
+    .story-ring-img-bg {
+        display: none;
+    }
+
+    .story-ring-img-rom {
         display: none;
     }
 
@@ -1200,6 +1214,14 @@ a{
         border-bottom: none;
         width: 414px;
         margin-top: 40px;
+        height: auto;
+    }
+
+    .event-h3-box-bg {
+        border-bottom: none;
+        width: 414px;
+        margin-top: 10px;
+        height: auto;
     }
 
     .rose-event-img {
@@ -1219,9 +1241,31 @@ a{
         height: auto;
     }
 
+    .h3-event-bg {
+        font-size: 48px;
+        margin-bottom: -30px;
+        margin-inline-end: 89px;
+        padding: 0px;
+        width: auto;
+        height: auto;
+    }
+
+    .h3-event-rom {
+        font-size: 48px;
+        margin-bottom: -30px;
+        margin-inline-end: 89px;
+        padding: 0px;
+        width: auto;
+        height: auto;
+    }
+
     .curch-icon {
         width: 32px;
         height: 32px;
+    }
+
+    .church-details h4 {
+        font-size: 32px;
     }
 
     .h5 {
@@ -1248,6 +1292,18 @@ a{
         margin-right: 0px;
     }
 
+    .h3-pre-bg {
+        font-size: 32px;
+        margin-right: 0px;
+        padding-left: 3px;
+    }
+
+    .h3-pre-ro {
+        font-size: 32px;
+        margin-right: 0px;
+        padding-left: 3px;
+    }
+
     .preDrincsIcon {
         width: 32px;
         height: 32px;
@@ -1256,7 +1312,25 @@ a{
         margin-top: 35px;
     }
 
+    .preDrincsIconBG {
+        width: 32px;
+        height: 32px;
+        padding-right: 3px;
+        margin-left: 0px;
+    }
+
+    .preDrincsIconRO {
+        width: 32px;
+        height: 32px;
+        padding-right: 3px;
+        margin-left: 0px;
+    }
+
     .imgFlower {
+        display: none;
+    }
+
+    .imgFlower-bg {
         display: none;
     }
 
@@ -1361,5 +1435,19 @@ a{
     .p2 {
         font-size: 18px;
         margin-bottom: 80px;
+    }
+
+    .carousel__button {
+        position: relative;
+        margin-top: 50px;
+    }
+    
+    .carousel__button img {
+        height: 50px;
+        width: 50px;
+
+    }
+
+    .carousel__button--left {
     }
 }
